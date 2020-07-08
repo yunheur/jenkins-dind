@@ -35,6 +35,13 @@ jenkins:
         - /var/run/docker.sock:/var/run/docker.sock
 ```
 
+# Trouble Shooting
+
+If permission denied occurs, modify the permissions of the host's docker.sock file as shown below.
+```bash
+sudo chmod 666 /var/run/docker.sock
+```
+
 # Reference
 
 - https://coding-start.tistory.com/329

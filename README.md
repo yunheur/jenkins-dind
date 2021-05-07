@@ -6,7 +6,7 @@ The jenkins docker image is for using docker.
 
 ```bash
 docker build -t yunheur/jenkins-dind:lts .
-docker push yunheur/jenkins-dind
+docker push yunheur/jenkins-dind:lts
 ```
 
 # How to use this image

@@ -5,8 +5,7 @@ The jenkins docker image is for using docker.
 # Create Docker Image
 
 ```bash
-docker build -t yunheur/jenkins-dind:lts .
-docker push yunheur/jenkins-dind:lts
+./build-docker.sh
 ```
 
 # How to use this image
@@ -39,8 +38,19 @@ jenkins:
 
 If permission denied occurs, modify the permissions of the host's docker.sock file as shown below.
 ```bash
-sudo chmod 666 /var/run/docker.sock
+$ sudo chmod 666 /var/run/docker.sock
 ```
+
+&nbsp;
+
+If permission denied occurs in docker container, modify the permissions of the docker container's docker.sock file as shown below.
+```bash
+$ docker exec -it --user root jenkins bash
+$ chmod 666 /var/run/docker.sock
+$ exit
+```
+
+
 
 # Reference
 

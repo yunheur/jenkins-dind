@@ -2,13 +2,13 @@
 
 The jenkins docker image is for using docker.
 
-# Create Docker Image
+### Create Docker Image
 
 ```bash
 ./build-docker.sh
 ```
 
-# How to use this image
+### How to use this image
 
 The following is how to use docker container.
 
@@ -34,7 +34,7 @@ jenkins:
         - /var/run/docker.sock:/var/run/docker.sock
 ```
 
-# Trouble Shooting
+### Trouble Shooting
 
 If permission denied occurs, modify the permissions of the host's docker.sock file as shown below.
 ```bash
@@ -52,6 +52,6 @@ $ exit
 
 
 
-# Reference
+### References
 
 - https://coding-start.tistory.com/329
